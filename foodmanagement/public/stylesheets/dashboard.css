@@ -1,0 +1,49 @@
+body{
+    background-image: url('/images/n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first{
+    width: 8cm;
+    height: 21cm;
+    /* background: linear-gradient(to top, rgba(1, 84, 99, 0.8), rgba(4, 70, 78, 0.8)); */
+   background-color:  rgb(5, 69, 88);
+}
+
+.img{
+    margin-left: 1.2cm;
+    margin-top: 0.3cm;
+}
+
+.hb{
+    color: white;
+    font-size: 35px;
+    margin-left: 0.7cm;
+    font-family:Algerian ;
+  
+  
+}
+.border{
+    border-style: double;
+    border-color: white;
+}
+.setbtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.decorbtn{
+ 
+ 
+ margin-top: 1cm;
+ 
+}
+.second{
+    width:37cm;
+    height: 2cm;
+    background-color:rgb(5, 69, 88);
+    display: flex;
+ margin-top: -17.6cm;
+ margin-left: 8cm;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+  <body>
+    <div class="tablecontainer " >
+      
+<div class="tablebox">
+  <div class="decorhead">
+  <div class="heading">Food Details-
+      <hr color="black">
+      <h5 style="margin-top: 20px;">Add More Dish&nbsp&nbsp&nbsp</h5>
+
+      <a href="/Food_company/foodinterface"> <i class="material-icons prefix"
+          style="font-size:40px;">settings_input_svideo
+        </i></a>
+
+    </div>
+  </div>
+
+
+    <table class="striped" >
+        <thead>
+          <tr>
+            <th>Food Detail ID</th>
+              <th>Food Category</th>
+              <th>Dish Name</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Offer Price</th>
+              <th>Dish Type</th>
+              <th>Dish Avalibility</th>
+              <th>Picture</th>
+              <th>Update</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            
+            <%result.map((item)=>{%>
+            <tr>
+        <td><%=item.fooddetailid%></td>    
+        <td><%=item.ftype%></td>
+        <td><%=item.fname%></td>
+        <td><%=item.Description%></td>
+        <td><%=item.price%></td>
+        <td><%=item.Offer_Price%></td>
+        <td><%=item.food_type%></td>
+        <td><%=item.status%></td>
+        <td><a href="/Food_company/display_picture?fid=<%=item.fooddetailid%>&fname=<%=item.fname%>&pic=<%=item.picture%>&ftype=<%=item.ftype%>"><img src="/images/<%=item.picture%>" width="40px"></a></td>
+        <td><a href='/Food_company/displaybyid?fid=<%=item.fooddetailid%>'>Edit/Delete</a></td>
+        <%})%>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </div>   
+  
+</div>
+  </body>
+</html>
+      
